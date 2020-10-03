@@ -34,7 +34,7 @@ public class DatingController {
 	// 			1. ADD NEW DATING SPECS INFORMATION FOR DATING APPLICATION
 	//----------------------------------------------------------------------------------------------------------------
 	@PostMapping(value = "/addDatingSpecs")
-	public ResponseEntity<DatingSpecsDTO> saveProfile(@Valid @RequestBody DatingSpecsDTO datingSpecsDTO, BindingResult bindingResult) throws InvalidDatingSpecsException {
+	public ResponseEntity<DatingSpecsDTO> saveDatingSpecs(@Valid @RequestBody DatingSpecsDTO datingSpecsDTO, BindingResult bindingResult) throws InvalidDatingSpecsException {
 
 		System.out.println("Inside Save Profile Information....");
 		
@@ -55,7 +55,7 @@ public class DatingController {
 	//----------------------------------------------------------------------------------------------------------------
 	// 			3. FETCH USER PROFILE AGAINST USERID IN DATING APPLICATION
 	//----------------------------------------------------------------------------------------------------------------
-	@GetMapping(value = "/getDatinSpecsById/{userId}")															// 5. WORKING
+	@GetMapping(value = "/getDatingSpecsById/{userId}")															// 5. WORKING
 	public ResponseEntity<DatingSpecsDTO> getDatingSpecsById(@PathVariable("userId") Long userId, BindingResult bindingResult) throws DatingSpecsNotFoundException {
 		
 		if(bindingResult.hasErrors())

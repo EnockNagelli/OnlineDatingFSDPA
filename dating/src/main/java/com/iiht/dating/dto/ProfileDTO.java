@@ -15,7 +15,6 @@ public class ProfileDTO {
 	private Blob profileImage;
 
 	@NotNull
-	@Size(min=5, max=10)
 	private Long contactNo;
 	
 	@NotNull

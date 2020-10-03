@@ -15,11 +15,11 @@ public class UserDTO {
 	private Long userId;
 
 	@NotNull
-	@Size(min=3, max=50)
+	@Size(min=5, max=50)
 	private String firstName;
 
 	@NotNull
-	@Size(min=3, max=50)
+	@Size(min=5, max=50)
 	private String lastName;
 
 	@NotNull
@@ -33,15 +33,15 @@ public class UserDTO {
 	private String gender;
 
 	@NotNull
-	@Size(min=1, max=255)
+	@Size(min=5, max=255)
 	private String address;
 
 	@NotNull
-	@Size(min=1, max=100)
+	@Size(min=5, max=100)
 	private String loginName;
 
 	@NotNull
-	@Size(min=6, max=10, message="required")  
+	@Size(min=5, max=10, message="required")  
 	private String password;
 
 	//-------------------------------------------------------------------------------------
@@ -50,11 +50,11 @@ public class UserDTO {
 		// TODO Auto-generated constructor stub
 	}
 	//-------------------------------------------------------------------------------------
-	public UserDTO(Long userId, @NotNull @Size(min = 3, max = 50) String firstName,
-			@NotNull @Size(min = 3, max = 50) String lastName, @NotNull @PastOrPresent LocalDate dateOfBirth,
-			@NotNull @Size(min = 4, max = 6) String gender, @NotNull @Size(min = 1, max = 255) String address,
-			@NotNull @Size(min = 1, max = 100) String loginName,
-			@NotNull @Size(min = 6, max = 10, message = "required") String password) {
+	public UserDTO(Long userId, @NotNull @Size(min = 5, max = 50) String firstName,
+			@NotNull @Size(min = 5, max = 50) String lastName, @NotNull @PastOrPresent LocalDate dateOfBirth,
+			@NotNull @Size(min = 4, max = 6) String gender, @NotNull @Size(min = 5, max = 255) String address,
+			@NotNull @Size(min = 5, max = 100) String loginName,
+			@NotNull @Size(min = 5, max = 10, message = "required") String password) {
 		super();
 		this.userId = userId;
 		this.firstName = firstName;
