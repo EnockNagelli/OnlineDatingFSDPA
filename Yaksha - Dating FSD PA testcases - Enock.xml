@@ -1,0 +1,489 @@
+<test-cases>
+	<!-- --------------------------------------------------------------------------- -->
+	<!-- Boundary Test Cases -->
+	<!-- --------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFirstNameLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'firstName'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testLastNameLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'lastName'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDateOfBirth</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the Date of Past or Present of the field 'dateOfBirth'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testGenderLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'gender'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAddressLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'address'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testLoginNameLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'loginName'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testPasswordLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'password'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testPostUserSuccess</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify Successful addition of 'User'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testPostUserFailed</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify failure of 'User' addition operation</desc>
+	</cases>
+	<!-- --------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testEmailLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'email'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testQualification</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'qualification'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testHobbies</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'hobbies'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFoodHabits</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'foodHabits'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAboutMe</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'aboutMe'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testPostProfileSuccess</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify Successful addition of 'Profile'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testPostProfileFailed</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify failure of 'Profile' addition operation</desc>
+	</cases>
+	<!-- --------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDatingDate</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'datingDate'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDatingTime</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'datingTime'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testLocationLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'location'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testRequestStatusLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'requestStatus'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDatingRequestLength</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify the length of the field 'datingRequest'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testPostDatingSpecsSuccess</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify Successful addition of 'DatingSpecs'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Boundary</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testPostDatingSpecsFailed</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>Test case to verify failure of 'DatingSpecs' addition operation</desc>
+	</cases>
+	<!-- --------------------------------------------------------------------------- -->
+	<!-- Exception Test Cases -->
+	<!-- --------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testUserForExceptionUponAddingNewUser</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'addUser' rest end point for 'InvalidUserException' upon adding New User</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testUserLoginForExceptionUponLoggingWithNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'addUser' rest end point for 'InvalidUserException' upon adding 'null' value in place of 'User'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testUserForExceptionUponFetchingUserByNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'getUserById' rest end point for 'UserNotFoundException' upon fetching 'User' by passing 'null' value in place of 'userId'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testUserForExceptionUponDeletingUserByNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'deleteUser' rest end point for 'UserNotFoundException' upon deleting by passing 'null' value</desc>
+	</cases>
+	<!-- --------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testProfileForExceptionUponAddingNewProfile</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'addProfile' rest end point for 'InvalidProfileException' upon adding New 'Profile'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testProfileForExceptionUponAddingProfileWithNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'addProfile' rest end point for 'InvalidProfileException' upon adding any 'Profile' with null values</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testProfileForExceptionUponFetchingProfileByNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'getProfileById' rest end point for 'ProfileNotFoundException' upon fetching 'Profile' by passing 'null' value in place of 'userId'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testProfileForExceptionUponDeletingProfileByNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'deleteProfile' rest end point for 'ProfileNotFoundException' upon deleting by passing 'null' value</desc>
+	</cases>
+	<!-- --------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDatingControllerForExceptionUponAddingNewDatingSpecs</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'addDatingSpecs' rest end point for 'InvalidDatingSpecsException' upon adding New 'DatingSpecs'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDatingControllerForExceptionUponAddingDatingSpecsWithNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'addDatingSpecs' rest end point for 'InvalidDatingSpecsException' upon adding any 'DatingSpecs' with null values</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDatingControllerForExceptionUponFetchingDatingSpecsByNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'getDatingSpecsById' rest end point for 'DatingSpecsNotFoundException' upon fetching 'DatingSpecs' by passing 'null' value in place of 'userId'</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Exception</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDatingControllerForExceptionUponDeletingDatingSpecsByNullValue</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To test 'deleteDatingSpecs' rest end point for 'DatingSpecsNotFoundException' upon deleting by passing 'null' value</desc>
+	</cases>
+	<!-- --------------------------------------------------------------------------- -->
+	<!-- Functional Testcases - Test Controller
+	<!-- --------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAddUser</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'saveUser' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAddUserBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'saveUser' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDeleteUser</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'deleteUser' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDeleteUserBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'deleteUser' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindUserById</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'getUserById' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindUserByIdBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'getUserById' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindAllUsers</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'getAllUsers' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindAllUsersBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'getUserById' rest end point</desc>
+	</cases>
+	<!-- -------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAddProfile</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'addProfile' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAddProfileBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'addProfile' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDeleteProfile</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'deleteProfile' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDeleteProfileBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'deleteProfile' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindProfileByUserId</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'getProfileById' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindProfileByUserIdBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'getProfileById' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindAllProfiles</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'getAllProfiles' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindAllProfilesBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'getAllProfiles' rest end point</desc>
+	</cases>
+	<!-- -------------------------------------------------------------------------- -->
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAddDatingSpecs</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'addDatingSpecs' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testAddDatingSpecsBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'addDatingSpecs' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDeleteDataingSpecs</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'deleteDatingSpecs' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testDeleteDataingSpecsByBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'deleteDatingSpecs' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindDatingSpecsById</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'getDatingSpecsById' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindDatingSpecsByIdBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'getDatingSpecsById' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindAllDatingSpecs</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional test upon 'getAllDatingSpecs' rest end point</desc>
+	</cases>
+	<cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+		<test-case-type>Functional</test-case-type>
+		<expected-ouput>true</expected-ouput>
+		<name>testFindAllDatingSpecsBDD</name>
+		<weight>2</weight>
+		<mandatory>true</mandatory>
+		<desc>To perform functional BDD test upon 'getAllDatingSpecs' rest end point</desc>
+	</cases>
+</test-cases>
