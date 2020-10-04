@@ -1,17 +1,17 @@
 package com.iiht.dating.dto;
 
-public class InvalidDatingSpecsExceptionResponse {
+public class InvalidDatingExceptionResponse {
 
 	private String message;
 	private long timeStamp;
 	private int status;
 
 	//---------------------------------------------------------------------------------------------
-	public InvalidDatingSpecsExceptionResponse() {
+	public InvalidDatingExceptionResponse() {
 		super();
 	}
 	//---------------------------------------------------------------------------------------------
-	public InvalidDatingSpecsExceptionResponse(String message, long timeStamp, int status) {
+	public InvalidDatingExceptionResponse(String message, long timeStamp, int status) {
 		super();
 		this.message = message;
 		this.timeStamp = timeStamp;

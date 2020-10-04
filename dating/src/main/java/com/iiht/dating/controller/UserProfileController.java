@@ -1,8 +1,5 @@
 package com.iiht.dating.controller;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.sql.Blob;
 import java.util.List;
 

@@ -93,6 +93,7 @@ public class ExceptionTests {
 	@Test
 	public void testUserForExceptionUponFetchingUserByNullValue() throws Exception
 	{
+		//Mockito.when(userService.getUserById(null)).thenReturn(DatingUtility.convertToUserDTO(MasterData.getUserDetails()));
 		Mockito.when(userService.getUserById(2L)).thenReturn(null);
 				
 		RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/user/getUserById/2")

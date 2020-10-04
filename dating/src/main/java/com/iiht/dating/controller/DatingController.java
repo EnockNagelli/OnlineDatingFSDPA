@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.iiht.dating.dto.DatingSpecsDTO;
-import com.iiht.dating.dto.InvalidDatingSpecsExceptionResponse;
+import com.iiht.dating.dto.InvalidDatingExceptionResponse;
 import com.iiht.dating.exception.DatingSpecsNotFoundException;
 import com.iiht.dating.exception.InvalidDatingSpecsException;
 import com.iiht.dating.services.DatingService;
@@ -80,16 +80,16 @@ public class DatingController {
 	// 			1. Exception Handling
 	//----------------------------------------------------------------------------------------------------------------
 	@ExceptionHandler(InvalidDatingSpecsException.class)
-	public ResponseEntity<InvalidDatingSpecsExceptionResponse> ProfileHandler(InvalidDatingSpecsException exception) {
-		InvalidDatingSpecsExceptionResponse resp = new InvalidDatingSpecsExceptionResponse(exception.getMessage(),System.currentTimeMillis(), HttpStatus.BAD_REQUEST.value());
-		ResponseEntity<InvalidDatingSpecsExceptionResponse> response = new ResponseEntity<InvalidDatingSpecsExceptionResponse>(resp, HttpStatus.BAD_REQUEST);
+	public ResponseEntity<InvalidDatingExceptionResponse> ProfileHandler(InvalidDatingSpecsException exception) {
+		InvalidDatingExceptionResponse resp = new InvalidDatingExceptionResponse(exception.getMessage(),System.currentTimeMillis(), HttpStatus.BAD_REQUEST.value());
+		ResponseEntity<InvalidDatingExceptionResponse> response = new ResponseEntity<InvalidDatingExceptionResponse>(resp, HttpStatus.BAD_REQUEST);
 		return response;
 	}
 	
 	@ExceptionHandler(DatingSpecsNotFoundException.class)
-	public ResponseEntity<InvalidDatingSpecsExceptionResponse> ProfileNotFoundHandler(DatingSpecsNotFoundException exception) {
-		InvalidDatingSpecsExceptionResponse resp = new InvalidDatingSpecsExceptionResponse(exception.getMessage(),System.currentTimeMillis(), HttpStatus.NOT_FOUND.value());
-		ResponseEntity<InvalidDatingSpecsExceptionResponse> response = new ResponseEntity<InvalidDatingSpecsExceptionResponse>(resp, HttpStatus.NOT_FOUND);
+	public ResponseEntity<InvalidDatingExceptionResponse> ProfileNotFoundHandler(DatingSpecsNotFoundException exception) {
+		InvalidDatingExceptionResponse resp = new InvalidDatingExceptionResponse(exception.getMessage(),System.currentTimeMillis(), HttpStatus.NOT_FOUND.value());
+		ResponseEntity<InvalidDatingExceptionResponse> response = new ResponseEntity<InvalidDatingExceptionResponse>(resp, HttpStatus.NOT_FOUND);
 		return response;
 	}
 }

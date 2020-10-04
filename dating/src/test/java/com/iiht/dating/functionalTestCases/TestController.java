@@ -102,7 +102,7 @@ public class TestController {
 		System.out.println(userDTO);
 		yakshaAssert(currentTest(),	result.getResponse().getContentAsString().contentEquals(MasterData.asJsonString(userDTO))? true : false, businessTestFile);
 	}
-	//-- BDD Test : addUesr -----------------------------------------------------------------------------------------------------
+	//-- BDD Test : addUesrBDD --------------------------------------------------------------------------------------------------
 	@Test
 	public void testAddUserBDD() throws Exception 
 	{
@@ -150,7 +150,7 @@ public class TestController {
 		
 		yakshaAssert(currentTest(),	result.getResponse().getContentAsString().contentEquals(MasterData.asJsonString(userDTO))? true : false, businessTestFile);
 	}
-	//-- BDD Test : deleteUser --------------------------------------------------------------------------------------------------
+	//-- BDD Test : deleteUserBDD -----------------------------------------------------------------------------------------------
 	@Test
 	public void testDeleteUserBDD() throws Exception
 	{
@@ -198,7 +198,7 @@ public class TestController {
 		
 		yakshaAssert(currentTest(),	result.getResponse().getContentAsString().contentEquals(MasterData.asJsonString(userDTO))? true : false, businessTestFile);
 	}
-	//-- BDD Test : getUserById -------------------------------------------------------------------------------------------------
+	//-- BDD Test : getUserByIdBDD ----------------------------------------------------------------------------------------------
 	@Test
 	public void testFindUserByIdBDD() throws Exception
 	{
@@ -235,11 +235,8 @@ public class TestController {
 	 */
 	@Test 
 	public void testFindAllUsers() throws Exception 
-	{ 
-        UserDTO userDTO = DatingUtility.convertToUserDTO(MasterData.getUserDetails());
-		
-		List<UserDTO> list = new ArrayList<UserDTO>();
-		list.add(userDTO);
+	{
+		List<UserDTO> list = DatingUtility.convertToUserDtoList(MasterData.getAllUsers());
 		
 		Mockito.when(userService.getAllUsers()).thenReturn(list);
 
@@ -259,10 +256,7 @@ public class TestController {
 	{
 		final int count[] = new int[1];
 
-        UserDTO userDTO = DatingUtility.convertToUserDTO(MasterData.getUserDetails());
-		
-		List<UserDTO> list = new ArrayList<UserDTO>();
-		list.add(userDTO);
+		List<UserDTO> list = DatingUtility.convertToUserDtoList(MasterData.getAllUsers());
 
 		Mockito.when(userService.getAllUsers()).then(new Answer<List<UserDTO>>() {
 			@Override
@@ -551,7 +545,7 @@ public class TestController {
 	//				2. Testing Rest End Point - /dating/deleteDataingSpecs/{userId}
 	//-- Test 2 : deleteDataingSpecs --------------------------------------------------------------------------------------------
 	@Test
-	public void testDeleteDataingSpecsByUserId() throws Exception
+	public void testDeleteDataingSpecs() throws Exception
 	{
         DatingSpecsDTO datingSpecsDTO = DatingUtility.convertToDatingSpecsDTO(MasterData.getDatingSpecsDetails());
         Long userId = datingSpecsDTO.getUserId();
@@ -566,9 +560,9 @@ public class TestController {
 		
 		yakshaAssert(currentTest(),	result.getResponse().getContentAsString().contentEquals(MasterData.asJsonString(datingSpecsDTO))? true : false, businessTestFile);
 	}
-	//-- BDD Test : deleteProfileBDD --------------------------------------------------------------------------------------------
+	//-- BDD Test : deleteDatingSpecsBDD --------------------------------------------------------------------------------------------
 	@Test
-	public void testDeleteDataingSpecsByUserIdBDD() throws Exception 
+	public void testDeleteDataingSpecsByBDD() throws Exception 
 	{
 		final int count[] = new int[1];
 	
